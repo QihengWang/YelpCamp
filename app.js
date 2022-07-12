@@ -111,7 +111,7 @@ store.on('error', function(e) {
 const sessionConfig = {
     store, 
     name: 'session',
-    secret: process.env.SECRET || 'thisshouldbeabettersecret!',
+    secret: process.env.SECRET || 'thisshouldbeabettersecret!', 
     resave: false,
     saveUninitialized: true,
     //expires和maxAge设置session的cookie过期时间为一周
@@ -163,6 +163,7 @@ app.use((err, req, res, next) => {
     res.status(statusCode).render('error', { err })
 })
 
-app.listen(3000, () => {
-    console.log('LISTENING TO PORT 3000...');
+const port = process.env.PORT || 3000;
+app.listen(port, () => {
+    console.log(`Listening on port ${port}`);
 });
