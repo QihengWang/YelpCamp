@@ -8,3 +8,21 @@
     height: 300px;
 }
 
+/* body {
+    height: 100vh;
+    background-image: url("https://res.cloudinary.com/wqh/image/upload/v1657683282/9AD4CFB3-AE83-4C74-9F2C-706DCA0387F2_x755zy.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+} */
+
+body {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://images.unsplash.com/photo-1559521783-1d1599583485?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.5);
+    box-shadow: inset 0 0 5rem rgba(0, 0, 0, 0.5);
+}
+
